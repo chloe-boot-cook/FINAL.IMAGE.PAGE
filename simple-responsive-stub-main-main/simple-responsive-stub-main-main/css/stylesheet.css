@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 1rem;
+}
+h1{
+    font-size: 2.5rem;
+    color: rgb(80, 79, 79);
+    text-shadow: 15px 15px 7px rgb(163, 149, 134)
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
+    color:rgb(87, 85, 82);
+    font-size: 1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 2rem;
+}
+#header{
+    background-color: rgb(221, 214, 196);
+    padding: 30px;
+    text-align: center;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 1;
+    padding: 2px;
+    min-width: 25%;
+}
+#col1{
+    background-color: rgb(221, 214, 196);
+    text-align: center;
+}
+#col2{
+    background-color: rgb(221, 214, 196);
+    text-align: center;
+}
+#col3{
+    background-color: rgb(221, 214, 196);
+    text-align: center;
+}
+#col4{
+    background-color:  rgb(221, 214, 196);
+    text-align: center;
+}
+#footer{
+    background-color: rgb(221, 214, 196);
+    padding: 10px;
+    text-align: center;
+}
+.flex-image{
+    width: 100%;
+}
+
+.flex-image:hover{
+    scale: 1.1;
+}
+
+.flex-image{
+    transition-duration: 1s; 
+}
+
+/*optimised for tablet*/
+@media (max-width: 1000px){
+    .column{
+        min-width: 50%;
+    }
+}
+/*optimised for mobile*/
+@media (max-width: 500px){
+    h1{
+        font-size: 3.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    #row{
+        flex-direction: column;
+    }
+}
